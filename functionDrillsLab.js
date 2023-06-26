@@ -115,7 +115,7 @@ const exclaim = function (str) {
 
 // console.log('arrow')
 // console.log('declaration')
-console.log('expression')
+console.log("expression");
 
 ////////////////// PROBLEM 8 ////////////////////
 
@@ -128,7 +128,7 @@ const exclaimTwo = (str) => {
   return str.toUpperCase() + "!!!";
 };
 
-console.log('arrow')
+console.log("arrow");
 // console.log('declaration')
 // console.log('expression')
 
@@ -153,7 +153,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-console.log('declaration')
+console.log("declaration");
 // console.log('expression')
 
 ////////////////// PROBLEM 10 ////////////////////
@@ -167,6 +167,18 @@ console.log('declaration')
 
 //CODE HERE
 
+function nameCheck(name) {
+  if (name === "Steven") {
+    console.log(`What is up Steven?`);
+  } else if (name === "Bryan") {
+    console.log(`Hey Bryan!`);
+  } else {
+    console.log(`Cool name, ${name}`);
+  }
+}
+
+let nameGreeting = nameCheck("Bryan");
+
 ////////////////// PROBLEM 11 ////////////////////
 /*
   Write a function called faveColorFinder that takes in one parameter called color (which will be a string).
@@ -179,6 +191,20 @@ console.log('declaration')
 
 //CODE HERE
 
+function faveColorFinder(color) {
+  if (color === "red") {
+    console.log(`red is a great color`);
+  } else if (color === "green") {
+    console.log(`green is a solid favorite color`);
+  } else if (color === "black") {
+    console.log(`so trendy`);
+  } else {
+    console.log(`you need to evaluate your favorite color choice`);
+  }
+}
+
+let colorRating = faveColorFinder("yellow");
+
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
 /*
@@ -188,6 +214,15 @@ let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
 */
 
 //CODE HERE
+
+function printAllNames(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+// printAllNames(["Cameron", "Riley", "Eric", "Brenna", "Karl"]);
+printAllNames(namesArr);
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
