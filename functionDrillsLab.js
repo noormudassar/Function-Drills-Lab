@@ -26,7 +26,7 @@ helloWorld();
 //CODE HERE
 
 const jsNinja = () => console.log(`I am a JavaScript ninja!`);
-// jsNinja()
+jsNinja();
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -36,6 +36,11 @@ const jsNinja = () => console.log(`I am a JavaScript ninja!`);
 */
 
 //CODE HERE
+
+function printName(name) {
+  console.log(name);
+}
+printName("Cameron");
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -48,6 +53,11 @@ const jsNinja = () => console.log(`I am a JavaScript ninja!`);
 */
 
 //CODE HERE
+
+function greeting(name) {
+  console.log(`Hello, ${name}`);
+}
+greeting("Jake");
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -62,6 +72,17 @@ const jsNinja = () => console.log(`I am a JavaScript ninja!`);
 
 //CODE HERE
 
+// const compareNums = (num1, num2) => {
+//   if (num1 === num2) {
+//     console.log(num1)
+//   }
+// }
+
+const compareNums = (num1, num2) => {
+  console.log(num1 > num2 ? num1 : num2);
+};
+compareNums(19, 11);
+
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Create a function called add that takes in two parameters 
@@ -71,6 +92,15 @@ const jsNinja = () => console.log(`I am a JavaScript ninja!`);
 */
 
 //CODE HERE
+
+function add(num1, num2) {
+  num1 = Number(num1);
+  num2 = Number(num2);
+  console.log(num1 + num2);
+}
+
+// sum = add("7", 3);
+sum = add(20, 5);
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -85,7 +115,7 @@ const exclaim = function (str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 ////////////////// PROBLEM 8 ////////////////////
 
@@ -98,7 +128,7 @@ const exclaimTwo = (str) => {
   return str.toUpperCase() + "!!!";
 };
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -108,6 +138,8 @@ const exclaimTwo = (str) => {
 
   Brownie points if you use a template string
 */
+const exclaimThree = (str) => console.log(`${str.toUpperCase()}!!!`);
+// exclaimThree("apple")
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -121,7 +153,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 ////////////////// PROBLEM 10 ////////////////////
