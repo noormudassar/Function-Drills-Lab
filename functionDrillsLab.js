@@ -355,6 +355,12 @@ emailCheck("apple@gmail.com");
 
 //CODE HERE
 
+function chocolateFrogs(gold) {
+  return gold / 3;
+}
+
+let totalFrogs = chocolateFrogs(9);
+
 ////////////////// PROBLEM 20 ////////////////////
 /*
   You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
@@ -369,6 +375,20 @@ let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9];
 */
 
 //CODE HERE
+
+function checkArrayAscending(arr) {
+  let comparisonValue = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] <= comparisonValue) {
+      console.log(false);
+    } else {
+      comparisonValue = arr[i];
+    }
+  }
+  console.log(true);
+}
+
+let arrayIsAscending = checkArrayAscending(sampleArray);
 
 ////////////////// PROBLEM 22 ////////////////////
 
