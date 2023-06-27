@@ -257,7 +257,6 @@ let oddChecker = thatsOdd(10);
 const bestMovie = (name) => console.log(`${name} is the best movie ever!`);
 bestMovie("Jaws");
 
-
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107];
 /* 
@@ -270,6 +269,16 @@ let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107];
 */
 
 //CODE HERE
+
+function bigOrSmall(arr) {
+  let answers = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] > 100 ? answers.push("big") : answers.push("small");
+  }
+  return answers;
+  // console.log(answers)
+}
+let arrayEvaluator = bigOrSmall(bigOrSmallArray);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = [
@@ -291,6 +300,17 @@ let loser = "Glimmer";
 
 //CODE HERE
 
+function theEliminator(contestants, loser) {
+  for (let i = 0; i < contestants.length; i++) {
+    if (contestants[i] === loser) {
+      contestants.splice(i, 1);
+    }
+  }
+  // console.log(contestants);
+  return contestants;
+}
+let updatedContestants = theEliminator(contestants, loser);
+
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo.";
 /*
@@ -299,6 +319,11 @@ let sampleString = "Hi, my name is Kylo.";
 */
 
 //CODE HERE
+
+function uppercase(string) {
+  console.log(string.toUpperCase());
+}
+uppercase(sampleString);
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -310,6 +335,17 @@ let sampleString = "Hi, my name is Kylo.";
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+
+//CODE HERE
+
+function emailCheck(email) {
+  String(email).trim();
+  if (email.includes("@")) {
+    console.log(`email verified`);
+  } else console.log(`must provide a valid email address`);
+}
+
+emailCheck("apple@gmail.com");
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
